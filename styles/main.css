@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+.navigators{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+/* The container must be positioned relative: */
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+select {
+    width: 50%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+/* The alert message box */
+.alert {
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.title {
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Roboto', serif;
+    font-weight: 1000;
+}
+.contact{
+    text-align: center;
+    font-size: 50px;
+}
+.shop{
+    text-align: center;
+}
+.shopTitle{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: rgb(57, 4, 53);
+    color: white;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  float: left;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: auto;
+}
+.address{
+  float: left;
+  padding-left: 10px;
+}
+.businessHours{
+  padding-left: 600px;
+}
+@media screen and (max-width: 620px) {
+  .navigators {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .businessHours {
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 1000px){
+  .businessHours {
+    padding-left: 900px;
+  }
+}

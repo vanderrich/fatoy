@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="http://127.0.0.1:5500/fashion%20toy/styles/main.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+	<title>Buy Lunchboxes At Fashion Toy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<audio autoplay loop>
+		<source src="audio/audio_547ebbf828.mp3">
+		<source src="audio/audio_547ebbf828.ogg"> 
+	</audio>
+	<script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
+	<style>
+
+		.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		}
+
+		.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		}
+
+		.sidenav a:hover {
+		color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		}
+
+		#main {
+		transition: margin-left .5s;
+		padding: 16px;
+		}
+
+		@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+		}
+		.cartImage{
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+		.card{
+			text-align: center;
+			border-style: solid;
+			border-width:thin;
+			padding-top: 1cm;
+			padding-bottom: 1cm;
+		}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<head>
+			<nav>
+				<a href="http://127.0.0.1:5500/fashion%20toy/main.html"><img class="navigators" src="http://127.0.0.1:5500/fashion%20toy/images/logo.jpg" width="100px"></a>
+				<div style="float: right;">
+					<a href="shop.html" class="navigators">Shop</a>
+					<a href="resources.html" class="navigators">Resources</a>
+					<a href="contact.html" class="navigators">Contact</a>
+				</div>
+			</nav>
+		</head>
+		
+		<div class="container">
+			<p class="shopTitle">Lunchboxes</p>
+
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<img src="images/fa2c46d6-22f3-4946-9cef-74580d4197c6.jpg" width="100px" id="image1">
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title">$11.01</h1>
+							<select name="size" id="size1" onchange="changed('1')">
+								<option value="small">small</option>
+								<option value="medium">medium</option>
+								<option value="big">big</option>
+								<option value="jumbo">jumbo</option>
+							</select>
+							<button type="button" class="btn btn-block btn-outline-primary"
+								onclick="cartLS.add({id: 1 + document.getElementById('size1').value,
+								color: '',
+								size: document.getElementById('size1').value,
+								type: 'Lunchbox',
+								image: document.getElementById('image1').src,
+								price: 11.01})">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<img src="images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9blue.webp" width="100px" id="image2">
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title">$18.12</h1>
+							<select name="color" id="color2" onchange="changed('2')">
+								<option value="blue">blue</option>
+								<option value="green">green</option>
+								<option value="pink">pink</option>
+							</select>
+							<button type="button" class="btn btn-block btn-outline-primary"
+								onclick="cartLS.add({id: 2 + document.getElementById('color2').value, 
+								size: '', 
+								price: 18.12,
+								type: 'Lunchbox',
+								image: document.getElementById('image2').src,
+								color: document.getElementById('color2').value})">
+							Add to Cart</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<img src="images/f51176a2-dafe-48c0-ae75-b6c64c88599f.webp" width="100px" id="image3">
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title">$19.54</h1>
+							<button type="button" class="btn btn-block btn-outline-primary"
+								onclick="cartLS.add({id: 3, 
+								size: '', 
+								price: 19.54,
+								type: 'Lbox',
+								image: document.getElementById('image3').src,
+								color: ''})">
+							Add to Cart</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<img src="images/d9b732cc-5c1b-4091-9576-1201c98340c1blue.webp" width="100px" id="image4">
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title">$18.12</h1>
+							<select name="color" id="color4" onchange="changed('4')">
+								<option value="blue">blue</option>
+								<option value="green">green</option>
+								<option value="pink">pink</option>
+							</select>
+							<button type="button" class="btn btn-block btn-outline-primary"
+								onclick="cartLS.add({id: 4 + document.getElementById('color4').value, 
+								size: '2-4 years', 
+								price: 18.12,
+								type: 'Lunchbox',
+								image: document.getElementById('image4').src,
+								color: document.getElementById('color4').value})">
+							Add to Cart</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<img src="images/5d3e977c-0c36-4292-81a4-3b5fdfb90512.webp" width="100px" id="image5">
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title">$9.63</h1>
+							<select name="size" id="size5">
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+							</select>
+							<button type="button" class="btn btn-block btn-outline-primary"
+								onclick="cartLS.add({id: 5 + document.getElementById('size5').value, 
+								size: document.getElementById('size5').value, 
+								price: 9.63,
+								type: 'shoe',
+								image: document.getElementById('image5').src,
+								color: 'brown'})">
+							Add to Cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="card-header">
+				<h2>Cart</h2>
+			</div>
+			<div class="card-body">
+				<table class="table">
+					<tbody class="cart">
+					</tbody>
+					<tfoot>
+						<td class="text-left"><button class="btn btn-block btn-sm btn-outline-primary" onclick="cartLS.destroy()">Clear Cart</button></td>
+						<td class="text-right">Total: <strong class="total"></strong></td>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<img class="cartImage" src="images/bag.png" onclick="openNav()">
+	</div>
+	<script>
+		function renderCart(items) {
+			const $cart = document.querySelector(".cart")
+			const $total = document.querySelector(".total")
+			
+			$cart.innerHTML = items.map((item) => `
+					<tr>
+						<td class="sidenavs"><image src="${item.image}" width=40, height=40></td>
+						<td class="sidenavs">${item.type}</td>
+						<td class="sidenavs">${item.quantity}</td>
+						<td class-"sidenavs">${item.color}</td>
+						<td class-"sidenavs">${item.size}</td>
+						<td class="sidenavs">
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary sidebutton"
+								onclick="cartLS.quantity('${item.id}',1)">+</button>
+						</td>
+						<td class="sidenavs">
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary sidebutton"
+								onclick="cartLS.quantity('${item.id}',-1)">-</button>
+						</td>
+						<td class="sidenavs">$${item.price}</td>
+						<td class="sidenavs"><Button class="btn btn-primary" onclick="cartLS.remove('${item.id}')">Delete</Button></td>
+					</tr>`).join("")
+
+			$total.innerHTML = "$" + Math.round(cartLS.total())
+		}
+		renderCart(cartLS.list())
+		cartLS.onChange(renderCart)
+		function openNav() {
+			if ($(window).width() > 800) {
+				document.getElementById("mySidenav").style.width = "600px";
+				document.getElementById("main").style.marginLeft = "600px";
+				var x = document.getElementsByClassName("navigators")
+				if ($(window).width() < 1100) {
+					for (let i = 0; i < x.length; i++) {
+						x[i].style.fontSize = "9px"
+					}
+				}
+			}
+			if ($(window).width() < 800) {
+				document.getElementById("mySidenav").style.width = $(window).width() + 'px';
+				document.getElementById("main").style.marginLeft = $(window).width() + 'px';
+				var x = document.getElementsByClassName("navigators")
+				for (let i = 0; i < x.length; i++) {
+					x[i].style.visibility = "hidden"
+				}
+				x = document.getElementsByClassName("sidenavs")
+				for (let i = 0; i < x.length; i++) {
+					x[i].style.fontSize = "13px"
+					x[i].style.padding = "0px"
+				}
+			}
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+			var x = document.getElementsByClassName("navigators");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.visibility = "visible";
+				x[i].style.fontSize = "";
+			}
+		}
+		function changed(index) {
+			var index2 = index
+			index = "image" + index;
+			index = document.getElementById(index);
+			switch (index.src) {
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/ae494c7a-8077-4a51-8829-3f6d096f2f68.webp":
+					index.src = "images/ae494c7a-8077-4a51-8829-3f6d096f2f68 2.webp"
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/ae494c7a-8077-4a51-8829-3f6d096f2f68%202.webp":
+					index.src = "images/ae494c7a-8077-4a51-8829-3f6d096f2f68.webp"
+					
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9blue.webp":
+					index.src = "images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9" + document.getElementById('color' + index2).value +'.webp'
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9green.webp":
+					index.src = "images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9" + document.getElementById('color' + index2).value +'.webp'
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9pink.webp":
+					index.src = "images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9" + document.getElementById('color' + index2).value +'.webp'
+					break;
+
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/d9b732cc-5c1b-4091-9576-1201c98340c1blue.webp":
+					index.src = "images/d9b732cc-5c1b-4091-9576-1201c98340c1" + document.getElementById('color' + index2).value +'.webp'
+					break;
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/d9b732cc-5c1b-4091-9576-1201c98340c1green.webp":
+					index.src = "images/d9b732cc-5c1b-4091-9576-1201c98340c1" + document.getElementById('color' + index2).value +'.webp'
+					break;
+				case "http://127.0.0.1:5500/fashion%20toy/shop/images/d9b732cc-5c1b-4091-9576-1201c98340c1pink.webp":
+					index.src = "images/d9b732cc-5c1b-4091-9576-1201c98340c1" + document.getElementById('color' + index2).value +'.webp'
+					break;
+			}
+		}
+	</script>
+</body>
+</html>
