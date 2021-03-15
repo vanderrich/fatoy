@@ -108,7 +108,7 @@
 								size: document.getElementById('size1').value,
 								type: 'Lunchbox',
 								image: document.getElementById('image1').src,
-								price: 11.01})">Add to Cart</button>
+								price: 1})">Add to Cart</button>
 						</div>
 					</div>
 				</div>
@@ -118,7 +118,7 @@
 							<img src="images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9blue.webp" width="100px" id="image2">
 						</div>
 						<div class="card-body">
-							<h1 class="card-title pricing-card-title">$18.12</h1>
+							<h1 class="card-title pricing-card-title">$6.81</h1>
 							<select name="color" id="color2" onchange="changed('2')">
 								<option value="blue">blue</option>
 								<option value="green">green</option>
@@ -127,7 +127,7 @@
 							<button type="button" class="btn btn-block btn-outline-primary"
 								onclick="cartLS.add({id: 2 + document.getElementById('color2').value, 
 								size: '', 
-								price: 18.12,
+								price: 6.81,
 								type: 'Lunchbox',
 								image: document.getElementById('image2').src,
 								color: document.getElementById('color2').value})">
@@ -138,15 +138,15 @@
 				<div class="col">
 					<div class="card">
 						<div class="card-header">
-							<img src="images/f51176a2-dafe-48c0-ae75-b6c64c88599f.webp" width="100px" id="image3">
+							<img src="images/9f648270-1bc1-4147-aff6-08eb968500d4.webp" width="100px" id="image3">
 						</div>
 						<div class="card-body">
-							<h1 class="card-title pricing-card-title">$19.54</h1>
+							<h1 class="card-title pricing-card-title">$3.82</h1>
 							<button type="button" class="btn btn-block btn-outline-primary"
 								onclick="cartLS.add({id: 3, 
 								size: '', 
-								price: 19.54,
-								type: 'Lbox',
+								price: 3.82,
+								type: 'Lunchbox',
 								image: document.getElementById('image3').src,
 								color: ''})">
 							Add to Cart</button>
@@ -162,7 +162,7 @@
 							<img src="images/d9b732cc-5c1b-4091-9576-1201c98340c1blue.webp" width="100px" id="image4">
 						</div>
 						<div class="card-body">
-							<h1 class="card-title pricing-card-title">$18.12</h1>
+							<h1 class="card-title pricing-card-title">$4.02</h1>
 							<select name="color" id="color4" onchange="changed('4')">
 								<option value="blue">blue</option>
 								<option value="green">green</option>
@@ -170,8 +170,8 @@
 							</select>
 							<button type="button" class="btn btn-block btn-outline-primary"
 								onclick="cartLS.add({id: 4 + document.getElementById('color4').value, 
-								size: '2-4 years', 
-								price: 18.12,
+								size: '', 
+								price: 4.02,
 								type: 'Lunchbox',
 								image: document.getElementById('image4').src,
 								color: document.getElementById('color4').value})">
@@ -182,24 +182,21 @@
 				<div class="col">
 					<div class="card">
 						<div class="card-header">
-							<img src="images/5d3e977c-0c36-4292-81a4-3b5fdfb90512.webp" width="100px" id="image5">
+							<img src="images/ddd9d3a4-ebd6-42ea-845a-f920a297562pink.webp" width="100px" id="image5">
 						</div>
 						<div class="card-body">
-							<h1 class="card-title pricing-card-title">$9.63</h1>
-							<select name="size" id="size5">
-								<option value="26">26</option>
-								<option value="27">27</option>
-								<option value="28">28</option>
-								<option value="29">29</option>
-								<option value="30">30</option>
+							<h1 class="card-title pricing-card-title">$1.95</h1>
+							<select name="color" id="color5">
+								<option value="pink">pink</option>
+								<option value="blue">blue</option>
 							</select>
 							<button type="button" class="btn btn-block btn-outline-primary"
-								onclick="cartLS.add({id: 5 + document.getElementById('size5').value, 
-								size: document.getElementById('size5').value, 
-								price: 9.63,
-								type: 'shoe',
+								onclick="cartLS.add({id: 5 + document.getElementById('color5').value, 
+								size: '', 
+								price: 1.95,
+								type: 'Lunchbox',
 								image: document.getElementById('image5').src,
-								color: 'brown'})">
+								color: document.getElementById('color5')})">
 							Add to Cart</button>
 						</div>
 					</div>
@@ -224,6 +221,9 @@
 		<img class="cartImage" src="images/bag.png" onclick="openNav()">
 	</div>
 	<script>
+		for (let i = 1; i < 5; i++) {
+			changed(i)
+		}
 		function renderCart(items) {
 			const $cart = document.querySelector(".cart")
 			const $total = document.querySelector(".total")
@@ -295,7 +295,11 @@
 					index.src = "images/ae494c7a-8077-4a51-8829-3f6d096f2f68 2.webp"
 				case "https://fashiontoy.netlify.app/shop/images/ae494c7a-8077-4a51-8829-3f6d096f2f68%202.webp":
 					index.src = "images/ae494c7a-8077-4a51-8829-3f6d096f2f68.webp"
-					
+					break;
+				
+				case "https://fashiontoy.netlify.app/shop/images/fa2c46d6-22f3-4946-9cef-74580d4197c6.jpg":
+					index.src = "images/fa2c46d6-22f3-4946-9cef-74580d4197c6.jpg"
+					break
 				case "https://fashiontoy.netlify.app/shop/images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9blue.webp":
 					index.src = "images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9" + document.getElementById('color' + index2).value +'.webp'
 				case "https://fashiontoy.netlify.app/shop/images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9green.webp":
