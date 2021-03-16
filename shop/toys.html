@@ -174,7 +174,24 @@
 				</div>
 			</div>
 		-->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="card-header">
+				<h2>Cart</h2>
+			</div>
+			<div class="card-body">
+				<table class="table">
+					<tbody class="cart">
+					</tbody>
+					<tfoot>
+						<td class="text-left"><button class="btn btn-block btn-sm btn-outline-primary" onclick="cartLS.destroy()">Clear Cart</button></td>
+						<td class="text-right">Total: <strong class="total"></strong></td>
+					</tfoot>
+				</table>
+			</div>
+		</div>
 		<img class="cartImage" src="images/bag.png" onclick="openNav()">
+
 	</div>
 	<script>function renderCart(items) {
 		const $cart = document.querySelector(".cart")
