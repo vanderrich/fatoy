@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fashion Toy</title>
+        <link rel="stylesheet" href="https://fashiontoy.netlify.app/styles/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            a, a:hover{
+                text-decoration: none;
+            }
+            .m8cecn{
+                font-family: 'Roboto', sans-serif;
+                border-bottom: 2px solid rgb(0, 0, 0);
+                font-size: 34px;
+            }
+            .ncme8c{
+                color: rgb(85, 85, 85);
+                border-bottom: 1px solid rgb(196, 196, 196);
+                display: flex;
+            }
+            .ncme8c:hover{
+                color: rgb(120, 120, 120);
+            }
+            p, .ncme8c{
+                cursor: pointer;
+            }
+            .FindBy{
+                display: none;
+            }
+            .aomucrym{
+                width: 50px;
+                height:  50px;
+            }
+        </style>
+    </header>
+    <body>
+        <nav>
+            <a href="https://fashiontoy.netlify.app"><img src="https://fashiontoy.netlify.app/images/logo.jpg" width="100px"></a>
+            <div style="float: right;">
+                <a href="https://fashiontoy.netlify.app/shop" class="navigators">Shop</a>
+                <a href="https://fashiontoy.netlify.app/recourses" class="navigators">Resources</a>
+                <a href="https://fashiontoy.netlify.app/contact" class="navigators">Contact</a>
+            </div>
+        </nav>
+        <noscript>
+            <div class="alert">
+                <p><img src="images/alert v2.png" width="20px" height="20px">You have disabled javascript. Immediately change it by going to settings and search for javascript. if you're using google chrome it should be in site settings</p>
+            </div>
+        </noscript>
+        <h1 class="shopTitle">Find Your Product</h1>
+        <br><br><br><br>
+        <div>
+            <div id="find">
+                <p class="m8cecn">Find Your Product</p>
+                <p class="ncme8c" onclick="Find('FindByUUID')">Find By ID</p>
+                <p class="ncme8c" onclick="Find('FindByImage')">Find By Image</p>
+                <p class="ncme8c" onclick="Find('FindByName')">Find By Name</p>
+            </div>
+        </div>
+        <div id="FindByName" class="FindBy">
+            <p style="cursor: pointer;color: #0082DD;" onclick="back('FindByName')">back</p>
+            <div class="featured">
+                <p class="m8cecn">Featured Product</p>
+                <a class="ncme8c" href="/en-us/product-resources/spike-prime"></a>
+                <a class="ncme8c" href="/en-us/product-resources/spike-prime">LEGO® Education SPIKE™ Prime</a>
+            </div>
+            <div class="shoes">
+                <p class="m8cecn">Shoes</p>
+            </div>
+            <div class="shirts">
+                <p class="m8cecn">Shirts</p>
+            </div>
+            <div class="lunchboxes">
+                <p class="m8cecn">Lunchboxes</p>
+            </div>
+            <div class="toys">
+                <p class="m8cecn">Toys</p>
+            </div>
+        </div>
+        
+        <div id="FindByUUID" class="FindBy">
+            <p style="cursor: pointer;color: #0082DD;" onclick="back('FindByUUID')">back</p>
+            <input id="UUID" type="text" placeholder="Input ID Here" oninput="UUIDChanged()">
+            <ul id="myUL">
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/4ecde5b3-cd7a-43b5-a854-8258a961d6e9blue.webp"><a href="4ecde5b3-cd7a-43b5-a854-8258a961d6e9.html">4ecde5b3-cd7a-43b5-a854-8258a961d6e9e</a></li>
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/5d3e977c-0c36-4292-81a4-3b5fdfb90512.webp"><a href="5d3e977c-0c36-4292-81a4-3b5fdfb90512.html">5d3e977c-0c36-4292-81a4-3b5fdfb90512</a></li>
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/7b4afcda-6d01-4d32-818d-e96a9e96376e.webp"><a href="7b4afcda-6d01-4d32-818d-e96a9e96376e.html">7b4afcda-6d01-4d32-818d-e96a9e96376e</a></li>
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/9f648270-1bc1-4147-aff6-08eb968500d4.webp"><a href="9f648270-1bc1-4147-aff6-08eb968500d4.html">9f648270-1bc1-4147-aff6-08eb968500d4</a></li>
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/ae494c7a-8077-4a51-8829-3f6d096f2f68.webp"><a href="ae494c7a-8077-4a51-8829-3f6d096f2f68.html">ae494c7a-8077-4a51-8829-3f6d096f2f68</a></li>
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/b4377fdc-51e6-4981-bf92-f16017c7b1c2.jpg.webp"><a href="b4377fdc-51e6-4981-bf92-f16017c7b1c2.html">b4377fdc-51e6-4981-bf92-f16017c7b1c2</a></li>
+                <li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/d9b732cc-5c1b-4091-9576-1201c98340c1blue.webp"><a href="d9b732cc-5c1b-4091-9576-1201c98340c1.html">d9b732cc-5c1b-4091-9576-1201c98340c1</a></li>
+                <!--<li><img class="aomucrym" src="https://fashiontoy.netlify.app/shop/images/"><a href="#"></a></li>-->
+            </ul>
+        </div>
+        
+        
+        <div id="FindByImage" class="FindBy">
+            <p style="cursor: pointer;color: #0082DD;" onclick="back('FindByImage')">back</p>
+        </div>
+    </body>
+    <script>
+        function UUIDChanged() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('UUID');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+            }
+        }
+
+        }
+        function back(x) {
+            document.getElementById(x).style.display = "none";
+            document.getElementById("find").style.display = "block";
+        }
+        function Find(by) {
+            document.getElementById(by).style.display = "block";
+            document.getElementById("find").style.display = "none";
+        }
+    </script>
+</html>
